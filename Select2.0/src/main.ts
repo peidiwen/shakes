@@ -1,0 +1,11 @@
+import { createApp } from "vue";
+import naive from "naive-ui";
+import "./style.css";
+import router from "./router";
+import { pinia } from "./Store";
+import App from "./App.vue";
+const app = createApp(App);
+app.use(naive);
+app.use(pinia);
+app.use(router);
+app.mount("#app");
